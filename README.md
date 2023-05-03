@@ -20,7 +20,7 @@ MarVim also uses [treesitter](https://tree-sitter.github.io/tree-sitter/) as par
 ```
 ensure_installed = {"c", "cpp", "javascript", "typescript", "go", "rust", "python"},
 ```
-For the autocompletion, we use [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim) which used `Mason` in the background. To install a new lsp run `:Mason` and select the language with `I`. By default we have some languages already installed, you can add manually any language by editing `nvim/lua/core/plugin_config/lsp_config.lua` file
+For the autocompletion, we use [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim) which used `Mason` in the background. To install a new lsp run `:Mason` and select the language with `I`. By default we have some languages already installed, you can add manually any language by editing `nvim/lua/core/plugin_config/lsp_config.lua`
 
 ```
 lsp.ensure_installed({ "tsserver", "gopls", "pyright", "rust_analyzer", "clangd" })
