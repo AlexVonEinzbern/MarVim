@@ -33,3 +33,7 @@ Look [mason-lspconfig documentation](https://github.com/williamboman/mason-lspco
 rm -rf ~/.config/nvim
 rm -rf ~/local/share/nvim
 ```
+
+## TODO:
+- Add screenshots
+- Add list of available commands
