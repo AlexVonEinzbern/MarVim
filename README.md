@@ -9,6 +9,12 @@
 ```
 git clone https://github.com/AlexVonEinzbern/MarVim.git ~/.config/nvim --depth 1 && nvim
 ```
+
+MarVim uses [packer.nvim](https://github.com/wbthomason/packer.nvim) as plugin manager. To install all the plugins, open nvim and run:
+```
+:PackerSync
+```
+
 ## Uninstall on Linux
 
 ```
