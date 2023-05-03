@@ -15,7 +15,7 @@ MarVim uses [packer.nvim](https://github.com/wbthomason/packer.nvim) as plugin m
 ```
 :PackerSync
 ```
-MarVim also uses [treesitter](https://tree-sitter.github.io/tree-sitter/) as parser. To add new parsers, edit in `nvim/lua/core/plugin_config/treesitter.lua` file the following line:
+MarVim also uses [treesitter](https://tree-sitter.github.io/tree-sitter/) as parser. To add new parsers, edit in `nvim/lua/core/plugin_config/treesitter.lua` the following line:
 
 ```
 ensure_installed = {"c", "cpp", "javascript", "typescript", "go", "rust", "python"},
