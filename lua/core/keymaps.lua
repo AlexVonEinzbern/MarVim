@@ -18,7 +18,15 @@ vim.opt.expandtab = true
 
 -- KEYMAPS
 
+-- avoiding <Esc> key, use jj instead 
+vim.keymap.set('i', 'jj', '<Esc>')
+vim.keymap.set('v', 'jj', '<Esc>')
+
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+
+-- copying code
+vim.keymap.set('n', '<C-up>','yy<S-p>')
+vim.keymap.set('n', '<C-down>','yyp')
 
 -- moving code
 vim.keymap.set('n', '<C-j>', ':m .+1<CR>==', { noremap = true, silent = true })
@@ -28,3 +36,6 @@ vim.keymap.set('i', '<C-k>', '<Esc>:m .-2<CR>==gi', { noremap = true, silent = t
 vim.keymap.set('v', '<C-j>', ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
 vim.keymap.set('v', '<C-k>', ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
 
+-- BufferLine
+vim.keymap.set('n', '<Tab>l', ':BufferLineCycleNext<CR>', {})
+vim.keymap.set('n', '<Tab>h', ':BufferLineCyclePrev<CR>', {})
