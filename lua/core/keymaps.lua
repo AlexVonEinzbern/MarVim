@@ -16,11 +16,15 @@ vim.opt.shiftround = true
 vim.opt.expandtab = true
 
 
+-- KEYMAPS
+
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 
+-- moving code
 vim.keymap.set('n', '<C-j>', ':m .+1<CR>==', { noremap = true, silent = true })
 vim.keymap.set('n', '<C-k>', ':m .-2<CR>==', { noremap = true, silent = true })
 vim.keymap.set('i', '<C-j>', '<Esc>:m .+1<CR>==gi', { noremap = true, silent = true })
 vim.keymap.set('i', '<C-k>', '<Esc>:m .-2<CR>==gi', { noremap = true, silent = true })
 vim.keymap.set('v', '<C-j>', ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
 vim.keymap.set('v', '<C-k>', ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
+
