@@ -21,6 +21,9 @@ return require('packer').startup(function(use)
   use 'fatih/vim-go'
   use {"akinsho/toggleterm.nvim", tag = '*' }
   use 'm4xshen/autoclose.nvim'
+  use {'akinsho/bufferline.nvim', tag = "*",
+    requires = 'nvim-tree/nvim-web-devicons'
+  }
   use {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v1.x',
