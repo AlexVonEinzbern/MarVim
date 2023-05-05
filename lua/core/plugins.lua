@@ -20,6 +20,7 @@ return require('packer').startup(function(use)
   use 'nvim-treesitter/nvim-treesitter'
   use 'fatih/vim-go'
   use {"akinsho/toggleterm.nvim", tag = '*' }
+  use 'm4xshen/autoclose.nvim'
   use {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v1.x',
