@@ -1,5 +1,6 @@
 vim.opt.termguicolors = true
-require("bufferline").setup({
+local bufferline = require('bufferline')
+bufferline.setup {
   options = {
     diagnostics = "nvim_lsp",
     diagnostics_indicator = function(count, level, diagnostics_dict, context)
@@ -10,5 +11,9 @@ require("bufferline").setup({
       icon = '',
       style = 'icon',
     },
+    style_preset = {
+      bufferline.style_preset.no_italic,
+      -- bufferline.style_preset.no_bold,
+    },
   },
-})
+}

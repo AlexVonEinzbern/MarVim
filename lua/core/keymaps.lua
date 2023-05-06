@@ -18,6 +18,9 @@ vim.opt.expandtab = true
 
 -- KEYMAPS
 
+-- nvim-tree
+vim.keymap.set('n', '<C-n>', ':NvimTreeFindFileToggle<CR>')
+
 -- avoiding <Esc> key, use jj instead 
 vim.keymap.set('i', 'jj', '<Esc>')
 vim.keymap.set('v', 'jj', '<Esc>')
@@ -37,5 +40,7 @@ vim.keymap.set('v', '<C-j>', ":m '>+1<CR>gv=gv", { noremap = true, silent = true
 vim.keymap.set('v', '<C-k>', ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
 
 -- BufferLine
-vim.keymap.set('n', '<Tab>l', ':BufferLineCycleNext<CR>', {})
-vim.keymap.set('n', '<Tab>h', ':BufferLineCyclePrev<CR>', {})
+vim.keymap.set('n', '<Tab>l', ':bn<CR>', {})
+vim.keymap.set('n', '<Tab>h', ':bp<CR>', {})
+vim.keymap.set('n', '<Tab>d', ':bd<CR>', {})
+
